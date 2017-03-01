@@ -20,19 +20,3 @@ var data = {
     }
 };
 
-
-$('#plugin').advertize(data);
-
-$("#plugin").draggable({
-    //axis: 'x',
-    // containment : #divMax,
-    cursor:'move',
-    revert:'invalid'
-});
-$("#plugin").resizable({
-    aspectRatio : true // respect du ratio
-});
-
-$('#drop').droppable({
-    accept: '#plugin'
-}); 
