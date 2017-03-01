@@ -1,0 +1,46 @@
+.carousel {
+    width: 400px;
+  /*  border: 1px solid black;*/
+    display: inline-block;
+    margin-left: 5%;
+    text-align: center;
+    color : white;
+}
+
+.slide {
+    height: 200px;
+    width: 400px;
+}
+
+.slide img {
+    height: 180px;
+    width: 400px;
+}
+
+.slide span{    
+    font-family: Verdana;
+    text-align: center !important;
+    background-color: #F8F8FF;
+    width: 100% !important;
+    display:block;
+    color:black;
+}
+
+.slide.get_now {
+    background-image:url('../img/plugin/iphone_5_now_tmobile.jpg');
+    color : black;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.slide a {
+    display: inline-block;
+}
+
+.drop {
+    border-color: black;
+    height: 50vh;
+    border-style: solid;
+    float: right;
+    width: 50%;
+}
