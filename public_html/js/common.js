@@ -8,8 +8,7 @@ var data = {
         ],
         features: [
             'With iOS8',
-            'Elegant',
-            'Reactive'
+            'Elegant'
         ],
         price: 999.90,
         productLink: 'http://www.apple.com/fr/iphone-7/?afid=p238%7Cs05EVyND6-dc_mtid_187079nc38483_pcrid_165684031121_&cid=aos-fr-kwgo-brand-h17-slid-JatTnnws-product-'
@@ -20,3 +19,15 @@ var data = {
     }
 };
 
+$('#plugin2').advertize(data);
+$("#plugin2").draggable({
+    //axis: 'x',
+  //  containment : '#drop',
+    cursor:'move',
+    revert:'invalid'
+});
+
+
+$('#drop').droppable({
+    accept: '#plugin'
+}); 

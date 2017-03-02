@@ -12,11 +12,38 @@
             function createSlides(params) {
                 var slide, img, feature, link, btn;
                 // Si les données fournissent des images et si en plus, il y a des caractéristiques
-                
-                
-                
-                
+                if(settings.product.img !== null && settings.product.img.length > 0){ 
+                    for(var i = 0; i < settings.product.img.length; i++){
+                        //Creation de la slide
+                        slide = $('<div>', {'id' : 'slide', 'class' : 'slide'});  
+
+                        //Ajout img
+                        img = $('<img>', {'src': settings.product.img[i]});
+                        slide.append(img);
+
+                        //Ajout caractéristique
+                        if(settings.product.features[i] !== null && settings.product.features[i] !== undefined){
+                            feature = $('<span>', {'html': settings.product.features[i]});
+                            slide.append(feature);
+                        }
+                        
+                        //Ajout de la slide au carousel retourné
+                        carousel.append(slide);
+                    }
+                }
                 // Si le nom, le prix et l'url de la page produit sont fournis, on affiche dans la dernière slide une page avec un bouton-lien vers la page produit
+                  if (settings.product.name && settings.product.productLink
+                        && settings.product.price) {                                       
+                    slide = $('<div>',{'class' : 'slide get_now'});
+                    feature = $('<p>', {'text' : settings.product.name, 'class' : 'text'});
+                    link = $('<a>', {'href' : settings.product.productLink});
+                    btn = $('<button>', {'text' : 'Get it now! ' + settings.product.price + '€'});
+                    link.append(btn);
+                    slide.append(feature);
+                    slide.append(link);
+                    carousel.append(slide);
+                  }
+               
                
             }
 
