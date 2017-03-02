@@ -1,5 +1,5 @@
 .carousel {
-    width: 400px;
+    width: 40rem;
   /*  border: 1px solid black;*/
     display: inline-block;
     margin-left: 5%;
@@ -8,20 +8,20 @@
 }
 
 .slide {
-    height: 200px;
-    width: 400px;
+    height: 20rem;
+    width: 40rem;
 }
 
 .slide img {
-    height: 180px;
-    width: 400px;
+    height: 18rem;
+    width: 40rem;
 }
 
 .slide span{    
     font-family: Verdana;
-    text-align: center !important;
+    text-align: center;
     background-color: #F8F8FF;
-    width: 100% !important;
+    width: 100%;
     display:block;
     color:black;
 }
@@ -39,8 +39,8 @@
 
 .drop {
     border-color: black;
-    height: 50vh;
+    height: 30rem;
     border-style: solid;
     float: right;
-    width: 50%;
+    width: 40rem;
 }
